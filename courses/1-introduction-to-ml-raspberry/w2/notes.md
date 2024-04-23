@@ -387,4 +387,72 @@ Is the problem with this image-cropping algorithm due to bias or variance?
 How do you think Twitter could address this problem?
 - Invest in more people of color and women and minorities that are professionals in data science and ML and computer science to work on these models because if they are primarily made by caucasian Americans they will not more than likely know the bias they and inviting into the predictions. They openly get in front and work on where the issue lied, was it in the data? or was it in the algorithm for the model? Where was the bias introduced. Because a model is only as good as it's data. Then address the issue and move forward but I would roll that model back until they have the right answers to move forward in a culturally positive manner.
 
-## Bias in Recruitment 
+## Bias in Recruitment 	(｡◕‿‿◕｡)
+*just happy to be here, had some doubts earlier allowed myself to feel it for a second but continue to move forward and be consistent*
+
+### Game Demo
+
+[survival of the best fit](https://www.survivalofthebestfit.com/game/)
+
+### Forms of Recruitment Bias
+**Interpersonal bias**
+
+A form of human prejudice. This is where a person might treat someone differently, typically based on factors such as age, gender, race, and nationality, for example. In the recruitment process, this can be mitigated against by hiding any such factors from the people responsible for shortlisting.
+
+**Institutional bias**
+
+Relates to inequity stemming from organizational practices or policies. For example, a company might decide they want potential employees to have the right cultural fit for the organization. If the company is currently proportioned with a large number of people of a certain gender or privilege, then equally qualified candidates of a different gender or a less privileged background may get rejected.
+
+**Systematic bias**
+
+A bias that exists in society, which has an impact on the opportunities of marginalized groups. An example of how this might surface in recruitment is when a company prefers candidates who have attended high-ranking universities. Candidates from underprivileged backgrounds that haven't had access to good-quality education or haven't been able to afford to attend university are therefore less likely to be selected, even if they still meet the requirements outlined in the job specification.
+
+### Machine Learning in Recruitment
+
+Machine learning algorithms are able to determine what commonalities there are between successful candidates and are therefore able to look at new applicants and provide confidence score as to how similar they are to previously successful candidates.
+
+![machine-learning-bot](images/machine-learning-bot.gif)
+
+#### Important Questions to Ask
+1. What training data is being used and what bias exists in the training data?
+    - Removing some data to limit bias doesn't mean that the model will have no bias.
+    - For instance, an employer might decide that their workforce needs to be more diverse and therefore could decide to remove sensitive information from the training data such as age, race, and gender, for example. This would avoid a model being created that could inherit interpersonal bias, but it wouldn't guarantee that other forms of bias wouldn't appear.
+        - A machine learning algorithm might, for example, determine that most successful candidates have had continuous employment, disadvantaging those who have taken maternity or paternity leave. Alternatively, it might find that the historically successful candidates all live in more affluent areas, disadvantaging candidates from less affluent areas.
+
+### Solutions
+There are **no** easy solutions. However, one technique is to use the same machine learning algorithms to look inwardly at the company in question. 
+
+    By training the algorithm using data from current employees and exploring what importance it gives to particular skills, traits, or other features in their CVs, a company can make a judgement on what current biases are in place. They can then use this to improve their recruitment procedures in the future by removing this bias.
+
+Cool law. Often, you are covered by law if any automated decision has been made about you. In the UK, the [UK GDPR law](https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/individual-rights/rights-related-to-automated-decision-making-including-profiling/) gives you the right to request human intervention or challenge a decision if you feel that you have been unfairly rejected. There are similar laws in other countries.
+
+### Discussion
+
+I like learning about ethics but the bias and everything hits close to home and makes me push the feelings away by not fully engaging with the material. These biases really hit home for me and thinking about the training models that can enforce what i've already dealt with is painful. I liked the suggestion they gave:
+
+    By training the algorithm using data from current employees and exploring what importance it gives to particular skills, traits, or other features in their CVs, a company can make a judgement on what current biases are in place. They can then use this to improve their recruitment procedures in the future by removing this bias.
+
+## Age Determination
+
+Humans are good at determining age. As we get older, our accuracy in guessing ages tends to increase. Essentially, our brain has been fed lots of data for you to learn from experience. The margin of error of 8 years can be accounted for by the varying factors that separate biological age from how you look (diet, stress, illness, environmental factors).
+
+[YoTi Algorithm](https://www.yoti.com/wp-content/uploads/White-Paper-October-2020.pdf)
+
+Yoti's algorithm has been developed by using machine learning. "Hundreds and thousands of diverse facial images" were used as training data where the age of the person was known. By examining this data, the machine learnt which facial features in the images have a larger influence on estimating age than others. It didn't do this in a way that a human might, for example, by looking at the amount of grey hair or wrinkles in the skin. It instead took the images and looked at each individual pixel, treating it as a number. 
+
+## Discussion
+1. What type of problem is this? Classification, prediction, or knowledge organization?
+    - predictive model - I'm sure it could use some other problems to help organize the image data but it's a predictive model
+1. To get a wide range of training data, what factors do Yoti need to take into consideration? For example, is it OK to scrape photos from the internet?
+    - It depends, avoid scraping data online without consent/permissions
+        - Also abide by privacy security laws such as GDPR in Europe or CCPA in California. 
+    - Accuracy and Diversity
+    - Ethical Considerations
+    - Bias Mitigation
+    - Data Governance: Establish clear policies and procedures for managing and governing the training data, including data storage, access controls, and data retention practices.
+What are the potential advantages and disadvantages of this technology?
+    - Advantages: helps with circumstances that require identity verification and authentication
+    - Disadvantages: AI can be fooled, quality of data, bias in model, variance in model, what happens if it gets it wrong and sells something to someone who is not the age to have it and commits say a crime? Who is then help responsible? 
+
+
+week 2 ! \m/,(> . <)_\m/ done.
