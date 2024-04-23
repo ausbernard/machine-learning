@@ -8,6 +8,8 @@ Learn what machine learning is and its various applications.
 
 #### Online Courses:
 1. [Raspberry Pi: Introduction to Machine Learning and AI](https://www.edx.org/learn/computer-programming/raspberry-pi-foundation-introduction-to-machine-learning-and-ai?index=product&queryID=75fe180878ef0581c60f0c7a00fea392&position=1&results_level=first-level-results&term=machine+learning+raspberry&objectID=course-428a3e14-b649-4190-91d0-0ff2d8f1864a&campaign=Introduction+to+Machine+Learning+and+AI&source=edX&product_category=course&placement_url=https%3A%2F%2Fwww.edx.org%2Fsearch) 🌀
+
+     *Time to complete: 4 weeks (2–4 hours per week)*
     <details>
     <summary>Class Progress</summary>
 
