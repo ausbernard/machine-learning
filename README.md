@@ -1,5 +1,5 @@
 # Machine Learning Lesson Plan
-*~~ template generated with generative ai, ha.* •͡˘㇁•͡˘  *(the irony)*
+template generated with generative ai, ha. •͡˘㇁•͡˘  *(irony)* 
 
 ## Step 1: Understand the Basics of Machine Learning
 
@@ -7,7 +7,7 @@
 Learn what machine learning is and its various applications.
 
 #### Online Courses:
-1. Raspberry Pi: Introduction to Machine Learning and AI 🌀
+1. [Raspberry Pi: Introduction to Machine Learning and AI](https://www.edx.org/learn/computer-programming/raspberry-pi-foundation-introduction-to-machine-learning-and-ai?index=product&queryID=75fe180878ef0581c60f0c7a00fea392&position=1&results_level=first-level-results&term=machine+learning+raspberry&objectID=course-428a3e14-b649-4190-91d0-0ff2d8f1864a&campaign=Introduction+to+Machine+Learning+and+AI&source=edX&product_category=course&placement_url=https%3A%2F%2Fwww.edx.org%2Fsearch) 🌀
     <details>
     <summary>Class Progress</summary>
 
@@ -84,57 +84,3 @@ Learn what machine learning is and its various applications.
 1. 3Blue1Brown - "Essence of Linear Algebra" Series: This YouTube channel offers an excellent series of videos that explain linear algebra concepts visually, which are crucial for understanding machine learning algorithms.
 
 1. Sentdex - "Machine Learning with Python" Series: Sentdex's YouTube channel covers various machine learning topics with practical examples in Python. The series is suitable for beginners and covers topics like regression, classification, and neural networks.
-
-
-## Step 2: Dive into Machine Learning Algorithms (Schooling)
-Supervised Learning:
-Understand supervised learning algorithms such as linear regression, logistic regression, decision trees, and k-nearest neighbors.
-Learn about evaluation metrics like accuracy, precision, recall, and F1 score.
-
-Unsupervised Learning:
-Explore unsupervised learning algorithms including clustering (e.g., K-means clustering) and dimensionality reduction (e.g., PCA).
-Understand how to evaluate unsupervised learning models.
-
-Neural Networks and Deep Learning:
-Learn about artificial neural networks (ANNs) and deep learning architectures like convolutional neural networks (CNNs) and recurrent neural networks (RNNs).
-Dive into deep learning frameworks like TensorFlow or PyTorch.
-
-Step 3: Practical Projects and Hands-On Experience
-Implement Basic Machine Learning Models:
-
-Start by implementing simple machine learning models from scratch using Python and libraries like NumPy.
-Work on regression and classification problems to get a hands-on understanding of the algorithms.
-Participate in Kaggle Competitions:
-
-Join Kaggle and participate in competitions to apply your skills and learn from real-world datasets and problems.
-Collaborate with the community and explore kernels to understand different approaches.
-Work on Personal Projects:
-
-Identify a problem you're passionate about and build a machine learning solution to solve it.
-This could be anything from recommendation systems to natural language processing tasks.
-
-Step 4: Advanced Topics and Specializations
-Advanced Machine Learning Techniques:
-
-Explore advanced topics like ensemble learning, hyperparameter tuning, and model interpretation.
-Dive deeper into specific areas of interest such as computer vision, natural language processing, or reinforcement learning.
-Stay Updated:
-
-Follow research papers, blogs, and online communities to stay updated with the latest advancements in machine learning.
-Consider joining online forums or attending conferences to connect with professionals in the field.
-Specialized Courses or Certifications:
-
-Consider enrolling in specialized courses or certifications in machine learning from platforms like Coursera, edX, or Udacity.
-These courses often offer in-depth coverage of specific topics and provide certificates upon completion.
-
-Step 5: Practice, Practice, Practice!
-Continuous Learning:
-
-Machine learning is a rapidly evolving field, so keep learning and practicing regularly to stay up-to-date.
-Work on new projects, experiment with different algorithms, and collaborate with peers to enhance your skills.
-Contribute to Open Source:
-
-Contribute to open-source machine learning projects on platforms like GitHub to gain practical experience and give back to the community.
-Teach Others:
-
-Share your knowledge and expertise by writing blogs, creating tutorials, or mentoring aspiring machine learning enthusiasts.
