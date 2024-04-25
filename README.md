@@ -13,11 +13,11 @@ Learn what machine learning is and its various applications.
     <details>
     <summary>Class Progress</summary>
 
-    - *Course Completion* ![Week 1](https://img.shields.io/badge/Progress-50%25-yellow)
+    - *Course Completion* ![Week 1](https://img.shields.io/badge/Progress-53%25-yellow)
 
     - Week 1: ![Week 1](https://img.shields.io/badge/Progress-100%25-green) 
     - Week 2: ![Week 2](https://img.shields.io/badge/Progress-100%25-green)
-    - Week 3: ![Week 3](https://img.shields.io/badge/Progress-0%25-red)
+    - Week 3: ![Week 3](https://img.shields.io/badge/Progress-10%25-yellow)
     - Week 4: ![Week 4](https://img.shields.io/badge/Progress-0%25-red)
     - Started: April 10, 2024
     - Ended: TBD
