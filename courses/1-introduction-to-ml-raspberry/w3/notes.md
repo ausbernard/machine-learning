@@ -69,3 +69,54 @@ Eventually, your model will reach a point where a round of adjustment only leads
 ![ml-key-terms](images/ml-key-terms.png)
 
 ## 3.3 - Introduction to Supervised Learning
+![supervised-cat-image](images/supervised-cat-image.png)
+
+Supervised learning is a form of machine learning where the model is trained using data for which the correct output is already known.
+
+*Classification and regression* are examples of supervised learning. Both make predictions based on a learning process where input data has been labelled with correct output/class.
+
+### What is supervised learning
+**supervised** comes from the idea that performance is being monitored and corrected by providing feedback
+
+    Imagine a maths teacher who provides her student with a set of numbers to use as a starting point and also provides the answer they need to arrive at. What she doesn't do, however, is provide them with the formula they need to get to the answer. The student then spends time working out what the formula is. When the teacher provides a new set of numbers, her student applies the formula to work out an answer. The teacher then provides the student with feedback as to how accurately their formula performed. If the formula worked, great, it can be tested on a few more examples to make sure it still works. If not, then the formula is tweaked until it works.
+
+The supervision element is done partly by a human who labels the inputs with correct class/output, but the monitoring and accuracy and tweaking of the model is performed by the algorithm itself
+
+Thinking back to when you created a rock, paper, scissors algorithm, you provided the input data in the form of images. You also labelled each image as one of the three classes, providing the correct output you would like your model to provide if similar images were used as inputs in the future.
+
+At the end of each cycle of learning (batch), the model compares the predictions it produced to the correct answers provided by a human. The difference between them is called the 'error'. The model will tweak its rules to minimize error. It will then repeat this process until the error is below a maximum value that you set at the start of the training process.
+
+In traditional programming, it is the programmer that is responsible for the algorithm. In machine learning, however, you are allowing the machine to create the algorithm needed to solve the problem by itself.
+
+When supervised learning is used, the algorithm created from the learning process is known as the **mapping function**. 
+
+    y = f(x)
+
+- y is the predicted output
+- x is the new input data
+
+Once created, you can apply the mapping function to new inputs to give predictions for the output.
+
+In supervised learning such as classification of images you won't know specifically how the function f(x) works, as the machine is creating the algorithm itself. In regression, the model uses a less generalized mapping function, which is the same as the equation for line:
+
+    y = mx + c
+- y is the continuous variable
+- mx represents the input modified by a weight
+- c is the y-intercept - the output when the input is zero
+
+### Challenges of Supervised Learning
+Supervised learning requires a ton of quality training data for an effective learning process to take place.
+
+[ImageNet Roulette](https://excavating.ai/)
+    
+    A project called ImageNet started in 2007 with the aim of providing a vast dataset of labelled images that can be used by organizations to train their machine learning systems. ImageNet used crowdsourcing (enlisting the services of a large number of people via the internet) to create labels and label images in the dataset. Within 3 years, these people had labelled more than 3 million images with the objects (including humans) that appeared in the image.
+
+    A project named ImageNet Roulette built on this to allow users to upload their photos to see how ImageNet would classify them. The model used for this was trained on images in the person category within the ImageNet database. Soon after launching, users started to report that offensive results were being returned. One such example included children wearing sunglasses being labelled as "failure" or "loser".
+
+Good idea in theory, but having people upload and label the images because it can give you lots of data but there is not a way to control the quality of the data.
+
+### Supervised Learning Algorithms
+- Decision Trees
+- k-Nearest neighbor
+
+## Decision Tree's 	(╯°□°)╯
