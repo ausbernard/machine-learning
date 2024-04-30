@@ -1,6 +1,9 @@
 {
     "cSpell.words": [
         "crowdsourcing",
+        "gini",
+        "iloc",
+        "numpy",
         "overfitted",
         "overfitting",
         "underfitted",

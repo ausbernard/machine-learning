@@ -120,3 +120,35 @@ Good idea in theory, but having people upload and label the images because it ca
 - k-Nearest neighbor
 
 ## Decision Tree's 	(╯°□°)╯
+Used to solve classification and regression like problems in Machine Learning
+
+![solar-planets-decision-tree-diagram](images/solar-planets-decision-tree-diagram.png)
+
+Machine Learning Algorithms and historical Decision Tree's use binary decisions (ones with true and false outcomes) to split the data until they reach the final result. **Key difference is the algorithms are applied to larger datasets and they work out the most efficient splits of data to be able to make a prediction in as few steps as possible**
+
+Uses justifications of binary justification to get all binary ideations down to one form of "truth"
+
+### Decision Tree Algorithm
+Tree like flowchart with a hierarchal structure. The starting point like a tree is yes, the *root*.
+- **ROOT**: all of the data points of all the pieces aggregated data that will flow upwards (or downwards). Spilling over into *decision nodes* based on binary goals.
+- **DECISION NODES**: (づ｡◕‿‿◕｡)づ (hugs). Binary goals will use a decision node to branch off more data using more binary questions until it reaches the ultimate end - *a leaf*
+- **LEAF**: The algorithm will continue on and on is a little life forms as possible to reach it's **leaf/terminal-node** which is practically the end of the tree. A Decision that allows us to take our data and make heads or tales of it.
+![root-decision_node-leaf-diagram](images/root-decision_node-leaf-diagram.png)
+
+### Workout How to Separate Data at a Decision Node
+You need to have something in an algorithm that just knows when it ends. But in order to know when that ends you must know where it splits. It splits at places that machine learning folks like to call information gain and Gini impurity. It is a strategy for machine learning algorithms to tell how the data should further be separated to find a means to the end - a leaf or "terminal-node". 
+
+In textbook terms, the place to decide the optimal split from a root node, and subsequent splits.
+
+1. [making decisions with trees](https://medium.com/swlh/making-decisions-with-trees-559c8db5af59)
+1. [Gini impurity](https://towardsdatascience.com/gini-impurity-measure-dbd3878ead33)
+
+#### Making Decisions with Tree's
+This article breaks down decision trees further, down the road we will work through an example that is a real world problem solved by using a decision tree.
+
+![](images/decission-tree-architecture.webp)
+
+The decision we will work through is simple one: *Should I go to work, or not?*
+
+- [sample-data](making-decisions-with-trees/SampleData.csv) was created with a python script using pandas and numpy to fill arbitrary data into columns and rows of 8 individuals.
+- [final-decision-tree-py](making-decisions-with-trees/create_decision_tree.py) is a walkthrough coded problem where we use Trees to make a decision if we should go to work or not.
