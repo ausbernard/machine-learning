@@ -152,3 +152,9 @@ The decision we will work through is simple one: *Should I go to work, or not?*
 
 - [sample-data](making-decisions-with-trees/SampleData.csv) was created with a python script using pandas and numpy to fill arbitrary data into columns and rows of 8 individuals.
 - [final-decision-tree-py](making-decisions-with-trees/create_decision_tree.py) is a walkthrough coded problem where we use Trees to make a decision if we should go to work or not.
+
+### Classifying Data with Tree Example
+![decision-tree-example-data](images/decision-tree-example-data.png)
+
+1. It would first split the root node at the top to be true because gravity is less than or equal to 2.7. It would then split it as a `samples = 6, value = [6,0], and class = Moon.` Because the rotational-period is not less than or equal to -72.1
+1. It would be split false off the root node because gravity is not less than or equal to 2.75 (3.7). Therefore, it would fall in the false category and be `samples = 6, value = [0,6], class= Planet`
