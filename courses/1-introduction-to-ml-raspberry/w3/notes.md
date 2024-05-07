@@ -158,3 +158,46 @@ The decision we will work through is simple one: *Should I go to work, or not?*
 
 1. It would first split the root node at the top to be true because gravity is less than or equal to 2.7. It would then split it as a `samples = 6, value = [6,0], and class = Moon.` Because the rotational-period is not less than or equal to -72.1
 1. It would be split false off the root node because gravity is not less than or equal to 2.75 (3.7). Therefore, it would fall in the false category and be `samples = 6, value = [0,6], class= Planet`
+
+## Unsupervised Learning
+Machines to learning researchers want computers to learn to spot similarities and difference in data on it's own. The aim of unsupervised learning is to find the data points that are similar and to tell the user what the similarities are.
+
+Makes 2 assumptions:
+1. There will be common characteristics that can be used to compare every data point. 
+1. Some data points will be more similar than others
+
+All machine learning projects follow this same cycle:
+1. Predict
+1. Calculate error
+1. Adjust
+
+### k-Means clustering
+Splitting your data into a number of clusters (k) that is set at the beginning. *You might also hear k called the number of "centroids", which just refers the point at the centre of a cluster.*
+- Once split in k-clusters the algorithm will at random select three data points to act as the initial centroids of the cluster
+- For every point on the graph, the algorithm will measure the distance on the graph to each of the centroids.
+- The distance is a measure of how "similar" the data point is to the centroids. Each data point will be classed as part of the cluster whose centroid is closest to it; you can call this one round of clustering.
+- Next, the algorithm finds the mean of each of the clusters, the actual centre of all of the groups.
+- The algorithm then does another round of clustering, using the new mean centres. Here, it is calculating an error — how many points would change groups. If this is not zero, the model is updated to use these new mean centres for the next set of predictions.
+- The rounds repeat until there is no change to the groupings. Once this has happened, the final clusters are the model's prediction of groups within the data.
+- The algorithm has no way of knowing if the clusters are right, as it has no labels, so the only way for it to evaluate the results is to test the variance in each cluster.
+![unsupervised-raw-data](images/unsupervised-raw-data.png)
+![unsupervised-1](images/unsupervised-1.png)
+![unsupervised-2](images/unsupervised-2.png)
+![unsupervised-3](images/unsupervised-3.png)
+![unsupervised-4](images/unsupervised-4.gif)
+![unsupervised-5](images/unsupervised-5.png)
+![unsupervised-6](images/unsupervised-6.png)
+![unsupervised-7](images/unsupervised-7.png)
+
+### Comparing the variance
+To calculate the variance, the algorithm will measure the distance from each point in a cluster to the mean (the centre) and add them all together. Although the algorithm has evaluated the clusters, it has no way of knowing whether these are the best results possible, so it repeats the whole process again with new random starting points. You can see the resulting clusters from four new iterations of the algorithm below.
+![comparing-variance-4-rounds](images/comparing-variance-4-rounds.png)
+
+The algorithm will compare the variance in each iteration, and whichever iteration has the lowest total variance will become the final product.
+
+![comparing-variance-result](images/comparing-variance-result.png)
+In this case, iteration 2 has the smallest amount of variance, so the algorithm would give this set of clusters as the result.
+
+![final-choice](images/final-choice.png)
+
+**This is particularly helpful on large large datasets where humans could not possibly discern the groupings.**

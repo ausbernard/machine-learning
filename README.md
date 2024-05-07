@@ -13,23 +13,65 @@ Learn what machine learning is and its various applications.
     <details>
     <summary>Class Progress</summary>
 
-    - *Course Completion* ![Week 1](https://img.shields.io/badge/Progress-53%25-yellow)
+    - *Course Completion* ![Week 1](https://img.shields.io/badge/Progress-75%25-yellow)
 
     - Week 1: ![Week 1](https://img.shields.io/badge/Progress-100%25-green) 
     - Week 2: ![Week 2](https://img.shields.io/badge/Progress-100%25-green)
-    - Week 3: ![Week 3](https://img.shields.io/badge/Progress-10%25-yellow)
+    - Week 3: ![Week 3](https://img.shields.io/badge/Progress-100%25-green)
     - Week 4: ![Week 4](https://img.shields.io/badge/Progress-0%25-red)
     - Started: April 10, 2024
     - Ended: TBD
 
     </details>
-1. UCSanDiegoX: Data Structures: An Active Learning Approach 🟥
+
+1. [Get Ready for Pre-Calculus](https://www.khanacademy.org/math/get-ready-for-precalculus) 🌀
+
+    <details>
+    <summary>Class Progress</summary>
+
+    - *Course Completion* ![Week 1](https://img.shields.io/badge/Progress-10%25-yellow)
+    - Unit 1: ![Unit 1](https://img.shields.io/badge/Progress-100%25-green) 
+    - Unit 2: ![Unit 2](https://img.shields.io/badge/Progress-0%25-red)
+    - Unit 3: ![Unit 3](https://img.shields.io/badge/Progress-0%25-red)
+    - Unit 4: ![Unit 4](https://img.shields.io/badge/Progress-0%25-red)
+    - Unit 5: ![Unit 5](https://img.shields.io/badge/Progress-0%25-red)
+    - Unit 6: ![Unit 6](https://img.shields.io/badge/Progress-0%25-red)
+    - Unit 7: ![Unit 7](https://img.shields.io/badge/Progress-0%25-red)
+    - Unit 8: ![Unit 8](https://img.shields.io/badge/Progress-0%25-red)
+    - Started: April 10, 2024
+    - Ended: TBD
+
+    </details>
+
+1. [Pre-Calculus](https://www.khanacademy.org/math/precalculus) 🟥
+
+    <details>
+    <summary>Class Progress</summary>
+
+    - *Course Completion* ![Week 1](https://img.shields.io/badge/Progress-10%25-yellow)
+    - Unit 1: ![Unit 1](https://img.shields.io/badge/Progress-100%25-green) 
+    - Unit 2: ![Unit 2](https://img.shields.io/badge/Progress-0%25-red)
+    - Unit 3: ![Unit 3](https://img.shields.io/badge/Progress-0%25-red)
+    - Unit 4: ![Unit 4](https://img.shields.io/badge/Progress-0%25-red)
+    - Unit 5: ![Unit 5](https://img.shields.io/badge/Progress-0%25-red)
+    - Unit 6: ![Unit 6](https://img.shields.io/badge/Progress-0%25-red)
+    - Unit 7: ![Unit 7](https://img.shields.io/badge/Progress-0%25-red)
+    - Unit 8: ![Unit 8](https://img.shields.io/badge/Progress-0%25-red)
+    - Started: April 10, 2024
+    - Ended: TBD
+
+    </details>
+
+    https://www.khanacademy.org/math/precalculus
+1. UCSanDiegoX: Data Structures: An Active Learning Approach 🌀
     
     *Time to complete: 10 weeks (6–7 hours per week)*
     <details>
     <summary>Class Progress</summary>
 
-        TBD
+    - *Course Completion* ![Week 1](https://img.shields.io/badge/Progress-0.01%25-yellow)
+
+    - Section 1: ![Week 1](https://img.shields.io/badge/Progress-25%25-yellow) 
 
     </details>
 
