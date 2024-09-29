@@ -1,3 +1,10 @@
+| Category       | Details                                                                                                 |
+|----------------|---------------------------------------------------------------------------------------------------------|
+| **Array List** |                                                                                                         |
+| Pros/Cons      | **Pros**: How many elements we want to store. And don't plan or modifying the array. O(1) time space complexity<br>**Cons**: Problematic either in terms of time complexity (rebuilding the backing array as we need to grow it) or in terms of space complexity (allocating more space than we need just in case). |
+| Scenario Time  | **find**: if the array sorted and used binary search worst case is O(log n)<br>**insert/remove**: are always O(n) because we will always have to iterate over the (n) list and do the operation |
+| Algorithms     | **Sorting**:<br>- Bubble Sort<br>- Selection Sort<br>- Insertion Sort<br>- Merge Sort<br>- [Quick Sort](work-python/data_structures/array/quick_sort.py)<br>**Searching**:<br>- [Linear Search](work-python/data_structures/array/linear_search.py)<br>- [Binary Search](work-python/data_structures/array/binary_search.py)<br>**Other**:<br>- Two-Pointer Technique<br>- Sliding Window Technique<br>- Kadane's Algorithm<br>- Prefix Sum |
+
 # Introduction and Review
 
 ## Time Complexity
@@ -261,10 +268,3 @@ Like an array -- overall similar functions -- but has it's pros and cons
 n summation, Linked Lists are great (constant-time) when we add or remove elements from the beginning or the end of the list, but finding elements in a Linked List (even one in which elements are sorted) cannot be optimized like it can in an Array List, so we are stuck with O(n) "find" operations. Also, recall that, with Array Lists, we needed to allocate extra space to avoid having to recreate the backing array repeatedly, but because of the dynamic allocation of memory for new nodes in a Linked List, we have no wasted memory here.
 
 Array-based and Linked data structures are two basic starting points for many more complicated data structures. Because one strategy does not entirely dominate the other (i.e., they both have their pros and cons), you must analyze each situation to see which approach would be better.
-
-| Category       | Details                                                                                                 |
-|----------------|---------------------------------------------------------------------------------------------------------|
-| **Array List** |                                                                                                         |
-| Pros/Cons      | **Pros**: How many elements we want to store. And don't plan or modifying the array. O(1) time space complexity<br>**Cons**: Problematic either in terms of time complexity (rebuilding the backing array as we need to grow it) or in terms of space complexity (allocating more space than we need just in case). |
-| Scenario Time  | **find**: if the array sorted and used binary search worst case is O(log n)<br>**insert/remove**: are always O(n) because we will always have to iterate over the (n) list and do the operation |
-| Algorithms     | **Sorting**:<br>- Bubble Sort<br>- Selection Sort<br>- Insertion Sort<br>- Merge Sort<br>- [Quick Sort](work-python/data_structures/array/quick_sort.py)<br>**Searching**:<br>- [Linear Search](work-python/data_structures/array/linear_search.py)<br>- [Binary Search](work-python/data_structures/array/binary_search.py)<br>**Other**:<br>- Two-Pointer Technique<br>- Sliding Window Technique<br>- Kadane's Algorithm<br>- Prefix Sum |
