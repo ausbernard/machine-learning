@@ -29,9 +29,9 @@ Learn what machine learning is and its various applications.
     <details>
     <summary>Class Progress</summary>
 
-    - *Course Completion* ![Week 1](https://img.shields.io/badge/Progress-10%25-yellow)
+    - *Course Completion* ![Week 1](https://img.shields.io/badge/Progress-31%25-yellow)
     - Unit 1: ![Unit 1](https://img.shields.io/badge/Progress-100%25-green) 
-    - Unit 2: ![Unit 2](https://img.shields.io/badge/Progress-0%25-red)
+    - Unit 2: ![Unit 2](https://img.shields.io/badge/Progress-100%25-green)
     - Unit 3: ![Unit 3](https://img.shields.io/badge/Progress-0%25-red)
     - Unit 4: ![Unit 4](https://img.shields.io/badge/Progress-0%25-red)
     - Unit 5: ![Unit 5](https://img.shields.io/badge/Progress-0%25-red)
