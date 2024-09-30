@@ -29,6 +29,13 @@
 
 a product that combines principles from computer science, data science, and statistics to create very specialized algorithms. Simple, can we train an AI application that can "learn" and grow more "intelligent"? We use this application to solve complex problems and ultimately gain more value to our company thus shareholders.
 
+#### Main Problems to Solve
+1. **Complex identification (classification)**: involves supplying data to a computer so that it can assign a label that data.
+1. **Prediction (regression):** The method to make predictions about future events, in which analyzes historical data to make future predictions. Classification chooses a prediction for a label, regression will calculate a number within a range. For example, weather forecasting.
+1. **Knowledge organization (clustering):** Is similar to the "human way" of organizational clustering where you have data points and the goal is to group similar data points together based on their characteristics and features. Now instead of the person organizing the data a computer would use a clustering algorithm to find the patterns, groups, and connections between the data points without a human specifying in advance what to look for.
+    - (ML) example: music streaming services could use this to group similar users together to more accurately make recommendations.
+1. **Computer vision:** Pretty simple, the main goal is to *see* what is in an image and extract useful information from it. It uses a combination of the concepts above to automate tasks that are achievable through the use of human vision
+
 ### Large Language Models
 
 are a specific type of AI models that have been trained using huge volumes of text (often billions of words). They are designed to generate a text response to a prompt as realistically as if you were speaking to a human by predicting which words come next in a sentence. - ChatGPT and CoPilot are examples.
@@ -40,11 +47,40 @@ Competence in a wide variety of intellectual tasks
 Competence in a specific intellectual task. This is the new wave of intelligence where the scope of the task is much smaller so that program can be extremely competent. And I want to be apart of that.
 
 ### Machine Learning
-consists of 4 types of learning:
-- supervised learning
-- unsupervised learning
-- reinforcement learning
-- neural networks
+Consists of 4 types of learning:
+- **Supervised Learning**: A type of machine learning where the model is trained on labeled data. The algorithm learns to map input data to the correct output based on the provided labels. Examples include classification and regression tasks.
+    - **Common Metric Evaluations Used:**
+        - **Classification Algorithms**
+            1. Precision
+            2. Accuracy
+            3. Recall (sensitivity)
+            4. F-1 Score
+        - **Regression Algorithms (Predictive Methods)**
+            - Mean Absolute Error (MAE)
+            - Mean Squares Error (MSE)
+            - Root Mean Squared Error (RMSE)
+            - R-squared
+    - **Linear Regression**: (Predictive) Use for predicting house prices based on features like size, location, etc. Used for predicting a continuous target variable based on one or more input features.
+    - **Logistic Regression**: (Predictive) Use for spam detection in emails. Used for binary classification that predicts the probability of a binary outcome.
+    - **Decision Trees**: Customer segmentation. A tree-like model used for both classification and regression tasks. It splits the data into subsets based on the value of input features.
+    - [Random Forest](algorithms/random-forest.py): Used for predicting loans. Ensemble method that combines multiple decision trees to improve accuracy and reduce overfitting
+    - **Support Vector Machines (SVM**): Use for image classification tasks. It finds the hyperplane that best separates the classes in the feature space.
+    - [k-Nearest Neighbors (k-NN)](algorithms/k-nearest.py): Use for recommender systems. Non parametric method used for classification and regression. It predicts the target value based on the k-nearest neighbors in the feature space.
+    - **Naive Bayes**: Use for text classification. Probabilistic classifier based on Bayes' theorem with the assumption of independence between features.
+    - **Gradient Boosting Machines (GBM)**: Use for predicting customer churn. An ensemble method that builds models sequentially each correcting the errors of the previous one.
+    - **Neural Networks**: Used for Image Recognition, natural language processing. Models inspired by human brains, used for complex tasks. They consist of layers of interconnected nodes (neurons). 
+  
+- **Unsupervised Learning**: A type of machine learning where the model is trained on unlabeled data. The algorithm tries to find hidden patterns or intrinsic structures in the input data. Examples include clustering and dimensionality reduction.
+    - Common Metric evaluations for clustering algorithms: 
+        - Silhouette Score - Measures how similar an object is to its own cluster compared to other clusters. The score ranges from -1 to 1, where a higher value indicates better-defined clusters. 
+    - Clustering Algorithms
+        - K-means Clustering: Use for customer segmentation, image compression. Partitions data into K clusters, where each data point belongs to the cluster with the nearest mean.
+        - Dimensionality Reduction Algorithms
+            - Principal Component Analysis (PCA): Reduces the dimensionality of the data by transforming it into a new set of variables (principal components) that are uncorrelated and capture the maximum variance.Use Case: Data visualization, noise reduction.
+
+- **Reinforcement Learning**: A type of machine learning where an agent learns to make decisions by performing actions in an environment to maximize cumulative reward. The agent learns from the consequences of its actions through trial and error. Examples include game playing and robotic control.
+
+- **Neural Networks**: A type of machine learning model inspired by the structure and function of the human brain. Neural networks consist of layers of interconnected nodes (neurons) that process input data to make predictions. They are used in various tasks such as image recognition, natural language processing, and more.
 
 ### Full Machine Learning Cycle
 
