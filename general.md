@@ -1,4 +1,5 @@
-# Table of Contents
+# Fundamentals
+## Table of Contents
 1. [Fundamentals](#fundamentals)
    1. [Artificial Intelligence](#artificial-intelligence)
    1. [Large Language Models](#large-language-models)
@@ -24,7 +25,6 @@
    1. [SQL](#sql)
    1. [Summary Table](#summary-table)
 
-# Fundamentals
 ### Artificial Intelligence
 
 a product that combines principles from computer science, data science, and statistics to create very specialized algorithms. Simple, can we train an AI application that can "learn" and grow more "intelligent"? We use this application to solve complex problems and ultimately gain more value to our company thus shareholders.
