@@ -77,7 +77,12 @@ Another way to avoid overfitting is to split your data into different sets and t
 #### Accuracy
 The ratio of correctly predicting instances to the total instance.
 
-Formula: \[ \text{Accuracy} = \frac{\text{True Positives} + \text{True Negatives}}{\text{Total Instances}} \]
+Formula: 
+
+\[
+\text{Accuracy} = \frac{\text{True Positives} + \text{True Negatives}}{\text{Total Instances}}
+\]
+
 
 #### Precision
 #### Recall (Sensitivity)
