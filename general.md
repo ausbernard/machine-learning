@@ -1,0 +1,40 @@
+# Fundamentals
+**Artificial Intelligence** is a product that combines principles from computer science, data science, and statistics to create very specialized algorithms. Simple, can we train an AI application that can "learn" and grow more "intelligent"? We use this application to solve complex problems and ultimately gain more value to our company thus shareholders.
+
+**Large Language Models** are a specific type of AI models that have been trained using huge volumes of text (often billions of words). They are designed to generate a text response to a prompt as realistically as if you were speaking to a human by predicting which words come next in a sentence. - ChatGPT and CoPilot are examples.
+
+**General intelligence —** Competence in a wide variety of intellectual tasks
+**Specialized intelligence —** Competence in a specific intellectual task. This is the new wave of intelligence where the scope of the task is much smaller so that program can be extremely competent. And I want to be apart of that.
+
+**Machine Learning** consists of 4 types of learning:
+- supervised learning
+- unsupervised learning
+- reinforcement learning
+- neural networks
+
+**Full Cycle of Building a Machine Learning Application/Model from Conception to Production Deployment & Monitoring/Maintenance**
+
+| Stage                    | Description                                                                                   |
+|--------------------------|-----------------------------------------------------------------------------------------------|
+| **Problem Definition**   | **Identity the Problem** <br>Clearly define the problem we want to solve <br> **Set Objectives** <br> Determine the goals and success criteria our the project.                                       |
+| **Data Collection**      | **Gather Data** <br> Gather the data required for the problem. Some ways are relational databases, API's, legal web scraping, web traffic logs off http servers, etc. <br> **Store Data** <br>Store that collected data in a structured format, such as a database or data warehouse.                                                   |
+| **Data Preparation**     | **Data Cleaning** <br> Establish a process to will clean our data. Each data set is different and will require a different cleansing program. Manual or automated process that generally includes: <br>• handling missing values <br> • removing duplicates <br>• correcting invalid data (outside of normal range) <br> • correcting format inconsistencies. <br> **Transform Data** <br> Normalize, scale, or encode data, as needed. <br> **Re-Visit Data** <br> (Optional), but clean data is so important and that is re-visiting the data source and the process to make sure our data input and output are clean for our models. <br> **Feature Engineering** <br> Create new features from existing data to improve model performance. <br> **Split Data** <br> Split the data into training, validation, and test sets. <br>We do not want to use all our data for training, this leads to overfitting the model. *Another way in which overfitting can be avoided is by splitting the training data and test data into different combinations of sets, to train several different models.*                                                        |
+| **Exploratory Data Analysis (EDA)** | **Visualize Data**<br>Visualize the data with plots and charts to understand data distributions and relationships. <br> **Statistical Analysis**<br> Perform statistical tests to gain further insights into the data.                                                               |
+| **Model Selection**      | **Choose Algorithm**<br>Choose the appropriate algorithms based on the problem type (classification or regression). <br> **Build Baseline Model**<br>Build the base - building the baseline model to compare against more complex models.                                                 |
+| **Model Training**       | **Train Models**<br> In the data prep, the process of splitting the data is important for this step. Here is where we use our different data combination sets to train multiple models and find the most optimized model for our problem. <br>**Hyperparameter Tuning**<br> Use techniques like grid search or random search to optimize hyperparameters. Tweaking all the wheels and engines to make the care go faster. Finding the best combination to make it go fastest.                                                     |
+| **Model Evaluation**     | **Evaluate Models**<br>Evaluate models using appropriate metrics. Such as accuracy, precision, recall, f1-score, or mean squared error. <br> **Cross-Validate**<br> Use cross-validation to ensure the model generalizes well to unseen data. Ensure our model works well with data it hasn't seen before.                                                   |
+| **Model Selection**      | **Select Best Model**<br>Select the model that performs the best on our validation set during Model Evaluation. <br> **Ensemble Methods**<br> Where we consider combining multiples models if it will improve performance.                 |
+| **Model Deployment**     | **Model Serialization** <br> Save the trained model using formats like Pickle or ONNX.<br> **Deploy Model**<br> Deploy the model to production using tools like Flask, FastAPI, or a cloud service such as Google AI Platform.                        |
+| **Monitoring and Maintenance** | **Monitor Performance**<br> Continuously monitor the model's performance in production. <br> • Track key performance metrics(ie: accuracy, precision, and recall) on new data.<br> • Setup automated alerts via pager duty for significant drops in performance.<br>**Update Model**<br>Retrain and update the model as new data becomes available. <br> **Statistical Tests** <br> Use statistical tests like the *Kolmogorov-Smirnov test* or *Chi-Square test* to detect changes in the distribution of input features or target variable. <br> **Detect & Address Model Drift**<br> Detect and address model drift to maintain accuracy over time. Model drift occurs when the statistical properties of the target variable or the input features change over time, leading to a decrease in model performance. <br> • Retrain the model<br> •Incremental Learning - using algorithms that support incremental learning <br>  • Feature Engineering - updating new features to capture the newness in the data <br>  • Model Selection - consider using different models to ensemble methods that might be more robust<br>                                |
+
+<br>
+<br>
+
+**Bias Variance Tradeoff**
+
+| Category       | Details                                                                                                 |
+|----------------|---------------------------------------------------------------------------------------------------------|
+| **Array List** |                                                                                                         |
+| Pros/Cons      | **Pros**: How many elements we want to store. And don't plan or modifying the array. O(1) time space complexity<br>**Cons**: Problematic either in terms of time complexity (rebuilding the backing array as we need to grow it) or in terms of space complexity (allocating more space than we need just in case). |
+| Scenario Time  | **find**: if the array sorted and used binary search worst case is O(log n)<br>**insert/remove**: are always O(n) because we will always have to iterate over the (n) list and do the operation |
+| Algorithms     | **Sorting**:<br>- Bubble Sort<br>- Selection Sort<br>- Insertion Sort<br>- Merge Sort<br>- [Quick Sort](work-python/data_structures/array/quick_sort.py)<br>**Searching**:<br>- [Linear Search](work-python/data_structures/array/linear_search.py)<br>- [Binary Search](work-python/data_structures/array/binary_search.py)<br>**Other**:<br>- Two-Pointer Technique<br>- Sliding Window Technique<br>- Kadane's Algorithm<br>- Prefix Sum |
