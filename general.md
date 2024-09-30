@@ -1,18 +1,52 @@
+# Table of Contents
+1. [Fundamentals](#fundamentals)
+   1. [Artificial Intelligence](#artificial-intelligence)
+   1. [Large Language Models](#large-language-models)
+   1. [Types of Intelligence](#types-of-intelligence)
+      1. [General Intelligence](#general-intelligence)
+      1. [Specialized Intelligence](#specialized-intelligence)
+   1. [Machine Learning](#machine-learning)
+      1. [Full Machine Learning Cycle](#full-machine-learning-cycle)
+      1. [Finding the Balance](#finding-the-balance)
+      1. [Bias Variance Tradeoff](#bias-variance-tradeoff)
+      1. [Training Sets vs Validation Set vs Test Set](#training-sets-vs-validation-set-vs-test-set)
+      1. [Metrics](#metrics)
+          1. [Accuracy](#accuracy)
+          1. [Precision](#precision)
+          1. [Recall (Sensitivity)](#recall-sensitivity)
+          1. [F1-Score](#f1-score)
+          1. [Mean Squared Error (MSE)](#mean-squared-error-mse)
+   1. [Importing CSV](#importing-csv)
+      1. [Using Pandas](#using-pandas)
+      1. [Built-in CSV Module](#built-in-csv-module)
+      1. [Numpy](#numpy)
+      1. [C](#c)
+   1. [SQL](#sql)
+   1. [Summary Table](#summary-table)
+
 # Fundamentals
-**Artificial Intelligence** is a product that combines principles from computer science, data science, and statistics to create very specialized algorithms. Simple, can we train an AI application that can "learn" and grow more "intelligent"? We use this application to solve complex problems and ultimately gain more value to our company thus shareholders.
+### Artificial Intelligence
 
-**Large Language Models** are a specific type of AI models that have been trained using huge volumes of text (often billions of words). They are designed to generate a text response to a prompt as realistically as if you were speaking to a human by predicting which words come next in a sentence. - ChatGPT and CoPilot are examples.
+a product that combines principles from computer science, data science, and statistics to create very specialized algorithms. Simple, can we train an AI application that can "learn" and grow more "intelligent"? We use this application to solve complex problems and ultimately gain more value to our company thus shareholders.
 
-**General intelligence —** Competence in a wide variety of intellectual tasks
-**Specialized intelligence —** Competence in a specific intellectual task. This is the new wave of intelligence where the scope of the task is much smaller so that program can be extremely competent. And I want to be apart of that.
+### Large Language Models
 
-**Machine Learning** consists of 4 types of learning:
+are a specific type of AI models that have been trained using huge volumes of text (often billions of words). They are designed to generate a text response to a prompt as realistically as if you were speaking to a human by predicting which words come next in a sentence. - ChatGPT and CoPilot are examples.
+
+### Types of Intelligence
+#### General intelligence
+Competence in a wide variety of intellectual tasks
+#### Specialized intelligence 
+Competence in a specific intellectual task. This is the new wave of intelligence where the scope of the task is much smaller so that program can be extremely competent. And I want to be apart of that.
+
+### Machine Learning
+consists of 4 types of learning:
 - supervised learning
 - unsupervised learning
 - reinforcement learning
 - neural networks
 
-**Full Cycle of Building a Machine Learning Application/Model from Conception to Production Deployment & Monitoring/Maintenance**
+### Full Machine Learning Cycle
 
 | Stage                    | Description                                                                                   |
 |--------------------------|-----------------------------------------------------------------------------------------------|
@@ -76,18 +110,35 @@ Another way to avoid overfitting is to split your data into different sets and t
 ### Metrics
 #### Accuracy
 The ratio of correctly predicting instances to the total instance.
-
-Formula: 
-
-\[
-\text{Accuracy} = \frac{\text{True Positives} + \text{True Negatives}}{\text{Total Instances}}
-\]
-
+- Formula: Accuracy = (True Positives + True Negatives) / Total Instances
+- Use Case: Best used when the classes are balanced
+- Tradeoff: High accuracy might hide the fact that the model is biased towards the majority class in imbalanced datasets.
 
 #### Precision
+The ratio of correctly predicted positive instances to the total predicted positive instances.
+- Formula: Precision = True Positives / (True Positives + False Positives)
+- Use Case: Important when the cost of False Positives is high
+- Tradeoff: High precision can lead to high bias if the model is too conservative in predicting positives
+- you’re picking apples from a tree. If you pick 5 apples and 4 of them are really good (that’s your true positives) but 1 apple is bad (that’s your false positive), precision helps us figure out how many of the apples you picked were actually good.
+
 #### Recall (Sensitivity)
+The ratio of correctly predicted positive instances to all actual positives.  
+- Formula: Recall = True Positives / (True Positives + False Negatives).
+- Use Case: Important when the cost of False Negatives is high.
+- Tradeoff: High recall can lead to high variance if the model is too lenient in predicting positives.
+- kid: If there are 10 lost animals (that's all the animals that need to be found) and the superhero finds 7 of them, recall helps us see how good the superhero is at their job.
 #### F1-Score
+The harmonic mean of precision and recall. In general, higher F1-Scores indicate better performance (ranges 0-1).
+
+On average, a good F1-Score is typically around 0.7 to 0.8. Scores above 0.8 are considered very good, while scores below 0.5 might indicate poor performance. The acceptable range can vary depending on the specific application and context.
+- Formula: F1-Score = 2 * (precision * recall) / (precision + recall)
+- Use Case: Useful when you need to balance precision and recall.
+- Tradeoff: Balances the tradeoff between precision and recall, but might not reflect the true performance if the classes are imbalanced.
 #### Mean Squared Error (MSE)
+The average of the squares of the errors between predicted and actual values. A good MSE is usually low, which means your throws are close to the target. If it’s high, it means you missed a lot. In machine learning, we use MSE to see how well a model is predicting things, like guessing the price of a toy based on its features!
+- Formula: MSE = (1/n) * Σ (Predicted_i - Actual_i)²
+- Use Case: Commonly used on regression tasks.
+- Tradeoff: High MSE reflects a high variance, while a low MSE might indicate high bias if the model is too simple (High error, low complexity - Starting phase usually).
 
 <br>
 
@@ -99,12 +150,77 @@ Formula:
 | **F1-Score** | Harmonic mean of precision and recall                                                        | High bias if both precision and recall are low                                  | High variance if precision and recall are high on training data but not on test data|
 | **MSE**      | Average of the squares of the errors between predicted and actual values                     | High bias if the model is too simple                                            | High variance if the model overfits the training data                           |
 \
+
+### Importing CSV
+#### Using Pandas
+Powerful and flexible data manipulation library that provides easy-to-use data structures and data analysis tools.
+
+*with file*
+```python
+import pandas as pd
+
+# Load CSV file into a DataFrame
+df = pd.read_csv('file.csv')
+
+# Display the first few rows of the DataFrame
+print(df.head())
+```
+*with url*
+```python
+import pandas as pd
+
+# Load CSV file from a URL into a DataFrame
+url = 'https://example.com/file.csv'
+df = pd.read_csv(url)
+
+# Display the first few rows of the DataFrame
+print(df.head())
+```
+#### Built-in CSV Module
+```python
+import csv
+
+# Load CSV file into a list of dictionaries
+with open('file.csv', mode='r') as file:
+    csv_reader = csv.DictReader(file)
+    data = [row for row in csv_reader]
+
+# Display the first few rows
+print(data[:5])
+```
+csv module with `csv.reader`
+```python
+import csv
+
+# Load CSV file into a list of lists
+with open('file.csv', mode='r') as file:
+    csv_reader = csv.reader(file)
+    data = [row for row in csv_reader]
+
+# Display the first few rows
+print(data[:5])
+```
+#### Numpy
+library for numerical computing in Python, which can also be used to read CSV files.
+```python
+import numpy as np
+
+# Load CSV file into a NumPy array
+data = np.genfromtxt('file.csv', delimiter=',', dtype=None, names=True, encoding='utf-8')
+
+# Display the first few rows
+print(data[:5])
+```
+#### C
+```c
+<TBD>
+```
 ### SQL
 
 SQL (Structured Query Language) is a standard language for managing and manipulating relational databases. Here are some fundamental concepts and commands in SQL:
 
 *Creating a Table*
-```
+```sql
 CREATE TABLE employees (
     id INT PRIMARY KEY,
     first_name VARCHAR(50),
@@ -114,37 +230,37 @@ CREATE TABLE employees (
 );
 ```
 *Inserting Data*
-```
+```sql
 INSERT INTO employees (id, first_name, last_name, age, department)
 VALUES (1, 'John', 'Doe', 30, 'Engineering');
 ```
 *Selecting Data*
-```
+```sql
 Select * FROM employees;
 ```
 *Update Data*
-```
+```sql
 UPDATE employees
 SET age = 31
 WHERE id = 1;
 ```
 *Deleting Data*
-```
+```sql
 DELETE FROM employees
 WHERE id = 1;
 ```
 *Filtering Data*
-```
+```sql
 SELECT * FROM employees
 WHERE department = 'Engineering';
 ```
 *Sorting Data*
-```
+```sql
 SELECT * FROM employees
 ORDER BY last_name ASC;
 ```
 *Joining Tables*
-```
+```sql
 CREATE TABLE departments (
     department_id INT PRIMARY KEY,
     department_name VARCHAR(50)
@@ -153,13 +269,13 @@ CREATE TABLE departments (
 INSERT INTO departments (department_id, department_name)
 VALUES (1, 'Engineering');
 ```
-```
+```sql
 SELECT employees.first_name, employees.last_name, departments.department_name
 FROM employees
 JOIN departments ON employees.department = departments.department_name;
 ```
 *Aggregating Data*
-```
+```sql
 SELECT department, COUNT(*) AS num_employees
 FROM employees
 GROUP BY department;
