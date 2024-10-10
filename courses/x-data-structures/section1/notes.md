@@ -251,6 +251,15 @@ In summation, Array Lists are great if we know exactly how many elements we want
 
 In general, all data structures have applications in which they excel as well as cases in which they fail, and it is up to the programmer to keep in mind these trade-offs when choosing what data structures to use.
 
+### Algotihms
+| Algorithm            | Description                                                                                   | Time Complexity | Space Complexity |
+|----------------------|-----------------------------------------------------------------------------------------------|-----------------|------------------|
+| [**Linear Search**]()    | Iterates through each element in the array to find the target value.                          | O(n)            | O(1)             |
+| [**Binary Search**]()    | Searches in a sorted array by repeatedly dividing the search interval in half.                | O(log n)        | O(1) (iterative) or O(log n) (recursive) |
+| [**Jump Search**]()      | Searches by jumping ahead by fixed steps and then performing a linear search within the block.| O(√n)           | O(1)             |
+| [**Interpolation Search**]() | Improved binary search for uniformly distributed data, estimates the position of the target. | O(log log n) (best case), O(n) (worst case) | O(1) |
+| [**Exponential Search**]() | Finds the range where the target may be present and then performs a binary search within that range. | O(log n)        | O(1)             |
+
 ## Linked Lists
 Like an array -- overall similar functions -- but has it's pros and cons
 - pros:
@@ -261,3 +270,7 @@ Like an array -- overall similar functions -- but has it's pros and cons
 In summation, Linked Lists are great (constant-time) when we add or remove elements from the beginning or the end of the list, but finding elements in a Linked List (even one in which elements are sorted) cannot be optimized like it can in an Array List, so we are stuck with O(n) "find" operations. Also, recall that, with Array Lists, we needed to allocate extra space to avoid having to recreate the backing array repeatedly, but because of the dynamic allocation of memory for new nodes in a Linked List, we have no wasted memory here.
 
 Array-based and Linked data structures are two basic starting points for many more complicated data structures. Because one strategy does not entirely dominate the other (i.e., they both have their pros and cons), you must analyze each situation to see which approach would be better.
+
+Elements in a Linked List must be **sorted**!
+
+To find an element e in a Skip List, we start our list traversal at head, and we start at the highest layer. 
