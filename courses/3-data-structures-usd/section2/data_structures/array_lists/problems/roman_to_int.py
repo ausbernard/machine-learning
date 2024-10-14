@@ -92,10 +92,3 @@ class RomanToInt:
             
         
         return total
-
-#### Roman Int
-roman_instance = RomanToInt()
-# Test 1
-roman_int = roman_instance.GreedyFast("MMMDCCCLXXXVIIIMMMDCCCLXXXVIII")
-print(f"answer: {roman_int}")
-# assert roman_int == 31104, f"Expected 31104, but got {roman_int}"

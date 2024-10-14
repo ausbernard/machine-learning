@@ -273,4 +273,4 @@ Array-based and Linked data structures are two basic starting points for many mo
 
 Elements in a Linked List must be **sorted**!
 
-To find an element e in a Skip List, we start our list traversal at head, and we start at the highest layer. 
+To find an element e in a Skip List, we start our list traversal at head, and we start at the highest layer.   

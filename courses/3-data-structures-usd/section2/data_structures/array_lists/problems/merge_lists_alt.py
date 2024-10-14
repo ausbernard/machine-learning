@@ -4,9 +4,6 @@ import random
 import string
 
 class Merge:
-    def generate_random_string(self, length):
-        return ''.join(random.choices(string.ascii_letters, k=length))
-
     def mergeAlternately(self, word1: str, word2: str) -> str:
         
         thief = []
